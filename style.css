@@ -23,6 +23,11 @@
 
 }
 
+*{
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
 body{
     min-height: 100vh;
     min-width: 100vw;
@@ -30,23 +35,43 @@ body{
     justify-content: center;
     align-items: center;
 
-    background-color: var(--Dark-Slate-Grey);
+    background-color: var(--Charcoal-Grey);
 
 }
 
 .conteiner {
     background-color: var(--White);
-    min-height: 60vh;
-    min-width: 50vw;
+    min-height: 75vh;
+    min-width: 60vw;
 
     border-radius: 1.5rem;
-    padding: 1rem 1.2rem;
-    gap: 3rem;
+    padding: 1rem;
+    gap: .6rem;
 
     display: flex;
     justify-content: space-between;
 }
 
-.imagem-rincipal{
-    background-image: url('');
+
+.infos {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3rem .6rem;
+    width: 50%;
+
+}
+
+.titulo-infos {
+    color: var(--Dark-Slate-Grey);
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+
+.imagem-principal{
+    width: 46.2%;
+    height: 37rem;
+    background-image: url(assets/images/illustration-sign-up-desktop.svg);
+    display: flex;
 }
